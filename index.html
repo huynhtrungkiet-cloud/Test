@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>AI Test</h2>
+
+<textarea id="prompt"></textarea><br><br>
+<button onclick="run()">Chạy</button>
+
+<pre id="out"></pre>
+
+<script>
+async function run() {
+  let prompt = document.getElementById("prompt").value;
+
+  document.getElementById("out").innerText = "Đang chạy...";
+
+  // TEST FAKE trước (không dùng API)
+  document.getElementById("out").innerText =
+    "Bạn vừa nhập: " + prompt;
+}
+</script>
+
+</body>
+</html>
